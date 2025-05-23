@@ -1,0 +1,14 @@
+[2025-05-16 16:38:14 +0000] [100776] [INFO] Starting gunicorn 23.0.0
+[2025-05-16 16:38:14 +0000] [100776] [INFO] Listening at: unix:/var/www/Expertassignment/gunicorn.sock (100776)
+[2025-05-16 16:38:14 +0000] [100776] [INFO] Using worker: sync
+[2025-05-16 16:38:14 +0000] [100777] [INFO] Booting worker with pid: 100777
+[2025-05-16 16:38:14 +0000] [100778] [INFO] Booting worker with pid: 100778
+[2025-05-16 16:38:14 +0000] [100779] [INFO] Booting worker with pid: 100779
+[2025-05-16 19:30:47 +0000] [100776] [ERROR] Worker (pid:100778) was sent SIGHUP!
+[2025-05-16 19:30:47 +0000] [100776] [ERROR] Worker (pid:100777) was sent SIGHUP!
+[2025-05-16 19:30:47 +0000] [100776] [ERROR] Worker (pid:100779) was sent SIGHUP!
+[2025-05-16 19:30:47 +0000] [100776] [INFO] Handling signal: hup
+[2025-05-16 19:30:47 +0000] [100776] [INFO] Hang up: Master
+[2025-05-16 19:30:47 +0000] [104054] [INFO] Booting worker with pid: 104054
+[2025-05-16 19:30:47 +0000] [104053] [INFO] Booting worker with pid: 104053
+[2025-05-16 19:30:47 +0000] [104055] [INFO] Booting worker with pid: 104055
