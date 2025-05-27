@@ -5,10 +5,10 @@
 
 <section class="hero-section"style="background-image: url('{% static "images/result.jpg" %}');height:800px;" >
   <div class="container">
-    <h1 class="hero-title" data-aos="fade-down" data-aos-duration="1000" style="color:white;">
+    <h1 class="hero-title" data-aos="fade-down" data-aos-duration="1000" style="color:white;text-shadow: 2px 2px 2px black;">
       <b>RESULT & REVIEWS</b>
     </h1>
-    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000"style="color: white;">
+    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000"style="color: white;text-shadow: 2px 2px 2px black;">
       <b>EXPERT ASSIGNMENT RESULTS & REVIEWS..</b>
     </p>
   </div>
@@ -149,7 +149,7 @@
   });
 </script>
 
-    
+<!--     
     <script>
       const track = document.getElementById('slideTrack');
       track.addEventListener('mouseenter', () => {
@@ -159,8 +159,22 @@
         track.style.animationPlayState = 'running';
       });
     </script>
-      
+       -->
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const slideTrack = document.getElementById('slideTrack');
+    const slides = document.querySelectorAll('.slide');
+    const slideCount = slides.length;
+    const slideDuration = 3500; // 2000 ms per slide
+
+    // Total animation duration (in seconds) for all slides to cycle through once
+    const totalDuration = (slideCount * slideDuration) / 1000;
+
+    // Set the CSS animation duration dynamically
+    slideTrack.style.animationDuration = `${totalDuration}s`;
+  });
+</script>
 
      
 {% endblock result %}
