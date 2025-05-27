@@ -188,5 +188,31 @@
   opacity: 1;
 }
 
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%; /* Adjust width as needed */
+}
+
+.slide-track {
+  display: flex;
+  width: calc(200%); /* Make it wide enough to loop */
+  animation: scroll 30s linear infinite; /* Default, JS will override duration */
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 200px; /* Adjust size based on your design */
+  margin-right: 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Adjust to how many slides you want to show */
+  }
+}
 
    
