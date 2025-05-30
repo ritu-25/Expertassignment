@@ -16,7 +16,7 @@
       <link rel="stylesheet" href="{% static 'css/about.css' %}">
       <link rel="stylesheet" href="{% static 'css/result.css' %}">
       <link rel="stylesheet" href="{% static 'css/megaoffer.css' %}">
-      <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon"/>
+      {% comment %} <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon"/> {% endcomment %}
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -34,11 +34,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
  
- <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- AOS CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 
 
@@ -51,20 +46,17 @@
           <i class="fas fa-bars"></i>
       </label>       
       <div class="logo">
-          <img src="{% static 'images/logo.jpg' %}" alt="Company Logo" style="height: 60px; width: auto;border-radius: 10px;margin-bottom:20px;margin-left:10px">
+          <img src="{% static 'images/logo.jpg' %}" alt="Company Logo" style="height: 60px; width: auto;border-radius: 10px;">
       </div>
       <ul>
-         <ul>
-  <li><a class="active" href="/home" style="text-decoration: none;">Home</a></li>
-  <li><a href="/gauranteedMarks" style="text-decoration: none;">Gauranteed Passing Marks</a></li>
-  <li><a href="/whyus" style="text-decoration: none;">Why us</a></li>
-  <li><a href="/contact" style="text-decoration: none;">Contact us</a></li>
-  <li><a href="/result" style="text-decoration: none;">Result</a></li>
-  <li><a href="/order" style="text-decoration: none;">Order</a></li>
-  <li><a href="/about" style="text-decoration: none;">About us</a></li>
-  <li><a href="/megaoffer" style="text-decoration: none;">Mega-Offers</a></li>
-</ul>
-
+          <li><a class="active" href="/home">Home</a></li>
+          <li><a href="/gauranteedMarks">Gauranteed Passing Marks</a></li>
+          <li><a href="/whyus">Why us</a></li>
+          <li><a href="/contact">Contact us</a></li>
+          <li><a href="/result">Result</a></li>
+          <li><a href="/order">Order</a></li>
+          <li><a href="/about">About us</a></li>
+          <li><a href="/megaoffer">Mega-Offers</a></li>
       </ul>
   </nav>
   
@@ -117,7 +109,7 @@
         <div class="col-md-3 mb-4" data-aos="fade-up">
           <h5 class="footer-title">Quick Links</h5>
           <ul class="footer-links">
-            <li><a href="/base">Base</a></li>
+            
             <li><a href="/home">Home</a></li>
             <li><a href="/gauranteedMarks">Gauranteed Passing Marks</a></li>
             <li><a href="/whyus">Why Us</a></li>
