@@ -91,33 +91,55 @@
 
 
 .card {
-      height: 320px;
-      transition: transform 0.5s ease, opacity 0.5s ease;
-      opacity: 0;
-      transform: translateY(30px);
-    }
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 10px;
+  overflow: hidden;
 
-    .card.animate {
-      opacity: 1;
-      transform: translateY(0);
-    }
+}
 
-    .card img {
-      height: 160px;
-      object-fit: cover;
-    }
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 
-    .card-title {
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 235px;
+  border-bottom: 2px solid #fff;
+}
 
-    .card-text {
-      font-size: 0.95rem;
-      color: #444;
-    }
+.card-title {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px black;
+}
 
-    .card:hover {
-      transform: scale(1.03);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-    }
+.card-text {
+  font-size: 0.95rem;
+  color: white;
+  padding: 0 10px;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Optional: Equal height for text blocks */
+.card-text {
+  min-height: 120px;
+}
+
+
+
+.container {
+  padding-top: 30px;
+  background: linear-gradient(to right, #1e3c72, #2a5298); /* Sample gradient background */
+  color: white;
+}
